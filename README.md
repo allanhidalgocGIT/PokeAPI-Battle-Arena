@@ -35,6 +35,3 @@ Se utiliza `fetch`, `async/await` y debounce para manejar las solicitudes de for
 ## Video de presentación
 
 https://youtu.be/IwVlZbPDve0
-- `index.html`: estructura de la aplicación.
-- `styles.css`: estilos de la aplicación.
-- `app.js`: búsqueda, API y lógica de la batalla.
