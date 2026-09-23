@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokéAPI Battle Arena</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <header class="header">
+      <h1>PokéAPI Battle Arena</h1>
+      <p>Elige dos Pokémon y empieza la batalla.</p>
+    </header>
+
+    <section id="picker" class="card">
+
+      <h2>Elegir Pokémon</h2>
+
+      <div class="pickers">
+
+        <div class="picker">
+
+          <label for="search1">Pokémon 1</label>
+
+          <input
+            id="search1"
+            type="text"
+            placeholder="Buscar Pokémon..."
+            autocomplete="off"
+          >
+
+          <div id="suggestions1" class="suggestions"></div>
+
+          <div id="selected1" class="selected"></div>
+
+        </div>
+
+
+        <div class="picker">
+
+          <label for="search2">Pokémon 2</label>
+
+          <input
+            id="search2"
+            type="text"
+            placeholder="Buscar Pokémon..."
+            autocomplete="off"
+          >
+
+          <div id="suggestions2" class="suggestions"></div>
+
+          <div id="selected2" class="selected"></div>
+
+        </div>
+
+      </div>
+
+      <p id="pickerMessage" class="message"></p>
+
+      <button id="startBattle" class="button" disabled>
+        Empezar batalla
+      </button>
+
+    </section>
+
+
+    <section id="battle" class="card hidden">
+
+      <h2>Batalla</h2>
+
+      <div class="fighters">
+
+        <article id="fighter1" class="fighter"></article>
+
+        <div class="vs">VS</div>
+
+        <article id="fighter2" class="fighter"></article>
+
+      </div>
+
+      <p id="battleMessage" class="battle-message">
+        Elige un movimiento.
+      </p>
+
+      <div id="moves1" class="moves"></div>
+
+      <div id="moves2" class="moves"></div>
+
+      <button id="playAgain" class="button secondary hidden">
+        Jugar otra vez
+      </button>
+
+    </section>
+
+
+    <p id="globalMessage" class="global-message"></p>
+
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
